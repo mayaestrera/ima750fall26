@@ -6,12 +6,17 @@
     <meta name="author" content="maya estrera">
 
       <style>
- 
+        
       body {
         font-family: 'Arial Narrow', sans-serif;
         background-color: #8ace00;
         color: #000000;
       }
+
+      .meter {
+        position: absolute;
+        top: 0;
+        right: 0;
 
       h1 {
         font-size: 100px;
@@ -26,9 +31,7 @@
       }
 
       .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         list-style-position: inside;
       }
       
@@ -42,12 +45,13 @@
   </head>
   <body>
     <!-- This is where you put your content -->
+    <div class="meter">today's brattiness:
+      <meter min=0 low=33 high=66 max=100 value=20></meter>
+    </div>
     <center>
     <h1>emerging media 1</h1>
     <h2>maya estrera</h2>
     <p>welcome to my portfolio :D</p>
-    <p>today's brattiness:</p>
-    <meter min=0 low=33 high=66 max=100 value=20></meter>
     <div>
       <img src="pic01.jpg" alt="all copabara are bad" height="270" width="480">
     </div>
