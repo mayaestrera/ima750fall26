@@ -19,14 +19,9 @@
         padding: 20px;
       }
 
-      @keyframes blink_fast {
-        0%, 100% {
-        opacity: 1
-        }
-        50% {
-        opacity: 0
-        }
-        }
+      @keyframes blinkFast {
+        from {opacity: 1}
+        to {opacity: 0}
         
       h2 {
         font-size: 50px;
@@ -55,14 +50,8 @@
   </head>
   <body>
     <!-- This is where you put your content -->
-    <div class="meter">today's brattiness:
-      <meter min=0 low=33 high=66 max=100 value=53></meter>
-    </div>
-    <center>
-    <div class="text-style blink-fast">emerging media 1</div>
-    <h1>emerging media 1</h1>
-    animation-name: redToYellow;
-    animation-duration: 4s;
+    animation-name: blinkFast;
+    animation-duration: 5s;
     /*
     animation-direction values are
     normal - play forward and resets to start over
@@ -70,9 +59,14 @@
     alternate - reverses direction each cycle, first is forward
     alternate-reverse - reverses direction each cycle, first is backwards
     */
-    animation-direction: alternate-reverse;
+    animation-direction: normal;
     animation-iteration-count: infinite;
-      
+    <div class="meter">today's brattiness:
+      <meter min=0 low=33 high=66 max=100 value=53></meter>
+    </div>
+    <center>
+    <div class="text-style blink-fast">emerging media 1</div>
+    <h1>emerging media 1</h1>      
     <h2>maya estrera</h2>
     <p>welcome to my portfolio :D</p>
     <div>
