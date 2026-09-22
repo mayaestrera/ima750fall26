@@ -15,26 +15,27 @@
 
       h1 {
         font-size: 100px;
-        margin: 20px;
-        padding: 20px;
       }
 
       .text-style {
         font-size: 100px;
+        font-weight: bold;
         color: #000000;
+        margin: 20px;
+        padding: 20px;
         display: block;
         text-align: center;
       }
         
       .blink-fast {
-      animation: blink_fast 1s
+      animation: blink_fast 5s
       }
 
       @keyframes blink_fast {
-        0%, 100% {
+        0%, 50, 100% {
         opacity: 1
       }
-      50% {
+      25%, 75 {
         opacity: 0
       }
       }
