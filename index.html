@@ -40,6 +40,31 @@
           top: 10px;
           right: 10px;
         }
+
+        .flashAnimated {
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+    }
+  
+      @keyframes flash {
+
+        0%,
+        50%,
+        100% {
+      opacity: 1;
+      }
+
+      25%,
+      75% {
+        opacity: 0;
+      }
+    }
+
+    .flash {
+      animation-name: flash;
+    }
           
     </style>
 
@@ -50,7 +75,9 @@
       <meter min=0 low=33 high=66 max=100 value=53></meter>
     </div>
     <center>
+    <div id="flashAnimates" class="flashAnimated">
     <h1>emerging media 1</h1>
+    </div>
     <h2>maya estrera</h2>
     <p>welcome to my portfolio :D</p>
     <div>
