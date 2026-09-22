@@ -13,10 +13,6 @@
         color: #000000;
       }
 
-      h1 {
-        font-size: 100px;
-      }
-
       .text-style {
         font-size: 100px;
         font-weight: bold;
@@ -27,15 +23,15 @@
         text-align: center;
       }
         
-      .blink-fast {
+      .blink-fast:hover {
       animation: blink_fast 5s
       }
 
       @keyframes blink_fast {
-        0%, 50, 100% {
+        0%, 50%, 100% {
         opacity: 1
       }
-      25%, 75 {
+      25%, 75% {
         opacity: 0
       }
       }
