@@ -14,8 +14,13 @@
       }
    
       @keyframes blinkFast {
-        from {opacity: 1}
-        to {opacity: 0}
+        0%, 100% {
+        opacity: 1
+        }
+        50% {
+        opacity: 0
+      }
+      }
         
       h1 {
         font-size: 100px;
@@ -65,7 +70,6 @@
       <meter min=0 low=33 high=66 max=100 value=53></meter>
     </div>
     <center>
-    <div class="text-style blink-fast">emerging media 1</div>
     <h1>emerging media 1</h1>      
     <h2>maya estrera</h2>
     <p>welcome to my portfolio :D</p>
