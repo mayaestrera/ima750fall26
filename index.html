@@ -12,16 +12,28 @@
         background-color: #8ace00;
         color: #000000;
       }
-
+   
+      @keyframes blinkFast {
+        from {opacity: 1}
+        to {opacity: 0}
+        
       h1 {
         font-size: 100px;
         margin: 20px;
         padding: 20px;
+        body {
+        animation-name: blinkFast;
+        animation-duration: 4s;
+        /*
+        animation-direction values are
+        normal - play forward and resets to start over
+        reverse - plays backwards and resets to end state
+        alternate - reverses direction each cycle, first is forward
+        alternate-reverse - reverses direction each cycle, first is backwards
+        */
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
       }
-
-      @keyframes blinkFast {
-        from {opacity: 1}
-        to {opacity: 0}
         
       h2 {
         font-size: 50px;
@@ -50,17 +62,6 @@
   </head>
   <body>
     <!-- This is where you put your content -->
-    animation-name: blinkFast;
-    animation-duration: 5s;
-    /*
-    animation-direction values are
-    normal - play forward and resets to start over
-    reverse - plays backwards and resets to end state
-    alternate - reverses direction each cycle, first is forward
-    alternate-reverse - reverses direction each cycle, first is backwards
-    */
-    animation-direction: normal;
-    animation-iteration-count: infinite;
     <div class="meter">today's brattiness:
       <meter min=0 low=33 high=66 max=100 value=53></meter>
     </div>
